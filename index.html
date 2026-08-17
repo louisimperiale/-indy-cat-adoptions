@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Indianapolis Cat Adoption | E.T. & Bat Need Loving Homes</title>
-  <meta name="description" content="Meet E.T. and Bat, two sweet and playful sister cats available for adoption in Indianapolis, Indiana. Contact Anna Moreno at 317-987-4423 for more information." />
+  <meta name="description" content="Meet E.T. and Bat, two sweet and playful sister cats available for adoption in Indianapolis, Indiana. Text Anna Moreno at 317-987-4423 for more information." />
   <meta name="keywords" content="Indianapolis cat adoption, cats for adoption Indianapolis, adopt a cat Indianapolis, kittens for adoption Indianapolis, Indiana cat adoption" />
   <meta name="robots" content="index, follow" />
 
@@ -27,9 +27,13 @@
       --radius: 26px;
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       margin: 0;
@@ -41,7 +45,9 @@
       line-height: 1.6;
     }
 
-    img { max-width: 100%; }
+    img {
+      max-width: 100%;
+    }
 
     .page {
       width: min(1120px, calc(100% - 32px));
@@ -76,7 +82,8 @@
       margin: 28px auto 8px;
     }
 
-    h1, h2 {
+    h1,
+    h2 {
       font-family: Georgia, "Times New Roman", serif;
       font-weight: 500;
       letter-spacing: -0.035em;
@@ -215,9 +222,7 @@
 
     .contact-actions {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
-      gap: 12px;
     }
 
     .button {
@@ -225,7 +230,7 @@
       align-items: center;
       justify-content: center;
       min-height: 52px;
-      padding: 0 22px;
+      padding: 0 26px;
       border-radius: 999px;
       text-decoration: none;
       font-weight: 750;
@@ -237,13 +242,10 @@
       color: white;
     }
 
-    .button-secondary {
-      background: rgba(255,255,255,.10);
-      border: 1px solid rgba(255,255,255,.22);
-      color: white;
+    .button:hover {
+      transform: translateY(-2px);
+      background: #c77a59;
     }
-
-    .button:hover { transform: translateY(-2px); }
 
     .phone {
       margin-top: 15px;
@@ -259,7 +261,9 @@
     }
 
     @media (max-width: 760px) {
-      .hero { padding-top: 22px; }
+      .hero {
+        padding-top: 22px;
+      }
 
       .logo {
         width: 64px;
@@ -306,79 +310,131 @@
   <main class="page">
 
     <header class="hero">
-      <img src="logo.png" alt="Indy Cat Adoptions cat logo" class="logo" />
-      <img src="banner.jpeg" alt="Indy Cat Adoptions Indianapolis skyline banner" class="banner" />
+      <img
+        src="logo.png"
+        alt="Indy Cat Adoptions cat logo"
+        class="logo"
+      />
+
+      <img
+        src="banner.jpeg"
+        alt="Indy Cat Adoptions Indianapolis skyline banner"
+        class="banner"
+      />
 
       <div class="hero-copy">
         <h1>Indianapolis Cat Adoption</h1>
+
         <p>
-          Meet E.T. and Bat, two sweet and playful sisters currently looking for loving homes
-          in the Indianapolis area.
+          Meet E.T. and Bat, two sweet and playful sisters currently
+          looking for loving homes in the Indianapolis area.
         </p>
-        <span class="sisters-note">Sisters • Female • Indianapolis, Indiana</span>
+
+        <span class="sisters-note">
+          Sisters • Female • Indianapolis, Indiana
+        </span>
       </div>
     </header>
 
     <section class="cats" aria-label="Cats available for adoption">
 
       <article class="cat-card">
+
         <div class="cat-photo-wrap">
-          <img src="et.jpeg" alt="E.T., a female cat available for adoption in Indianapolis" class="cat-photo" />
+          <img
+            src="et.jpeg"
+            alt="E.T., a female cat available for adoption in Indianapolis"
+            class="cat-photo"
+          />
         </div>
 
         <div class="cat-copy">
           <span class="eyebrow">Available for adoption</span>
+
           <h2>E.T.</h2>
-          <p class="details">Female • Sister to Bat</p>
+
+          <p class="details">
+            Female • Sister to Bat
+          </p>
+
           <p class="bio">
-            E.T. is a sweet, playful girl who was found with her sister Bat as part of a litter
-            in the Greenbriar neighborhood on Indianapolis’ north side. She is now looking for
-            a loving home of her own. More details about her personality will be added soon.
+            E.T. is a sweet, playful girl who was found with her sister
+            Bat as part of a litter in the Greenbriar neighborhood on
+            Indianapolis’ north side. She is now looking for a loving
+            home of her own. More details about her personality will be
+            added soon.
           </p>
         </div>
+
       </article>
 
       <article class="cat-card">
+
         <div class="cat-photo-wrap">
-          <img src="bat.jpeg" alt="Bat, a female cat available for adoption in Indianapolis" class="cat-photo" />
+          <img
+            src="bat.jpeg"
+            alt="Bat, a female cat available for adoption in Indianapolis"
+            class="cat-photo"
+          />
         </div>
 
         <div class="cat-copy">
           <span class="eyebrow">Available for adoption</span>
+
           <h2>Bat</h2>
-          <p class="details">Female • Sister to E.T.</p>
+
+          <p class="details">
+            Female • Sister to E.T.
+          </p>
+
           <p class="bio">
-            Bat is a sweet, playful girl who was found with her sister E.T. as part of a litter
-            in the Greenbriar neighborhood on Indianapolis’ north side. She is ready to find a
-            loving home where she can settle in and be part of the family. More details coming soon.
+            Bat is a sweet, playful girl who was found with her sister
+            E.T. as part of a litter in the Greenbriar neighborhood on
+            Indianapolis’ north side. She is ready to find a loving home
+            where she can settle in and be part of the family. More
+            details coming soon.
           </p>
         </div>
+
       </article>
 
     </section>
 
     <section class="story">
+
       <h2>Their story</h2>
+
       <p>
-        E.T. and Bat are sisters who were found as part of a litter in the Greenbriar neighborhood
-        on the north side of Indianapolis. Both are sweet, playful cats, and we’re hoping to connect
-        them with caring adopters who can give them safe, happy homes.
+        E.T. and Bat are sisters who were found as part of a litter in
+        the Greenbriar neighborhood on the north side of Indianapolis.
+        Both are sweet, playful cats, and we’re hoping to connect them
+        with caring adopters who can give them safe, happy homes.
       </p>
+
     </section>
 
     <section class="contact">
+
       <h2>Interested in adopting?</h2>
+
       <p>
-        To learn more about E.T. or Bat, ask questions, or arrange a time to meet them,
-        contact Anna Moreno.
+        To learn more about E.T. or Bat, ask questions, or arrange a
+        time to meet them, text Anna Moreno.
       </p>
 
       <div class="contact-actions">
-        <a class="button button-primary" href="tel:+13179874423">Call Anna</a>
-        <a class="button button-secondary" href="sms:+13179874423">Text Anna</a>
+        <a
+          class="button button-primary"
+          href="sms:+13179874423"
+        >
+          Text Anna
+        </a>
       </div>
 
-      <div class="phone">Anna Moreno • 317-987-4423</div>
+      <div class="phone">
+        Anna Moreno • 317-987-4423
+      </div>
+
     </section>
 
     <footer>
