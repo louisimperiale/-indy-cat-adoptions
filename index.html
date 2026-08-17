@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Indianapolis Cat Adoption | E.T. & Bat Need Loving Homes</title>
+  <meta name="description" content="Meet E.T. and Bat, two sweet and playful sister cats available for adoption in Indianapolis, Indiana. Contact Anna Moreno at 317-987-4423 for more information." />
+  <meta name="keywords" content="Indianapolis cat adoption, cats for adoption Indianapolis, adopt a cat Indianapolis, kittens for adoption Indianapolis, Indiana cat adoption" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="Indianapolis Cat Adoption | Meet E.T. & Bat" />
+  <meta property="og:description" content="Two sweet and playful sisters are looking for loving homes in Indianapolis." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="banner.jpeg" />
+
+  <style>
+    :root {
+      --bg: #f7f3ed;
+      --paper: #fffdf9;
+      --text: #252321;
+      --muted: #6c6762;
+      --line: #e5ded5;
+      --accent: #b76d50;
+      --accent-dark: #8b4e39;
+      --shadow: 0 18px 50px rgba(45, 39, 34, 0.10);
+      --radius: 26px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(183,109,80,.10), transparent 34rem),
+        var(--bg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+
+    img { max-width: 100%; }
+
+    .page {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .hero {
+      padding: 34px 0 24px;
+      text-align: center;
+    }
+
+    .logo {
+      width: 78px;
+      height: 78px;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto 14px;
+      mix-blend-mode: multiply;
+    }
+
+    .banner {
+      width: 100%;
+      border-radius: 22px;
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      display: block;
+      background: #faf6ef;
+    }
+
+    .hero-copy {
+      max-width: 760px;
+      margin: 28px auto 8px;
+    }
+
+    h1, h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 500;
+      letter-spacing: -0.035em;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.45rem, 7vw, 5rem);
+      line-height: 1;
+    }
+
+    .hero-copy p {
+      margin: 18px auto 0;
+      max-width: 670px;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    .sisters-note {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 8px 14px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255,255,255,.62);
+      color: var(--accent-dark);
+      font-size: .82rem;
+      font-weight: 700;
+      letter-spacing: .03em;
+    }
+
+    .cats {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 28px;
+      padding: 28px 0 44px;
+    }
+
+    .cat-card {
+      overflow: hidden;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .cat-photo-wrap {
+      aspect-ratio: 1 / 1;
+      overflow: hidden;
+      background: #e9e3db;
+    }
+
+    .cat-photo {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .4s ease;
+    }
+
+    .cat-card:hover .cat-photo {
+      transform: scale(1.025);
+    }
+
+    .cat-copy {
+      padding: 27px 28px 31px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 7px;
+      color: var(--accent-dark);
+      font-size: .74rem;
+      font-weight: 800;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 2.35rem;
+      line-height: 1;
+    }
+
+    .details {
+      margin: 0 0 14px;
+      color: var(--text);
+      font-weight: 650;
+      font-size: .95rem;
+    }
+
+    .bio {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .story {
+      margin: 0 0 44px;
+      padding: 34px;
+      background: rgba(255,255,255,.6);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      text-align: center;
+    }
+
+    .story h2 {
+      margin-bottom: 14px;
+      font-size: clamp(2rem, 5vw, 3rem);
+    }
+
+    .story p {
+      max-width: 720px;
+      margin: 0 auto;
+      color: var(--muted);
+    }
+
+    .contact {
+      margin: 0 auto 60px;
+      padding: 42px 28px;
+      border-radius: var(--radius);
+      background: var(--text);
+      color: white;
+      text-align: center;
+    }
+
+    .contact h2 {
+      margin-bottom: 12px;
+      font-size: clamp(2.2rem, 5vw, 3.3rem);
+    }
+
+    .contact p {
+      max-width: 610px;
+      margin: 0 auto 25px;
+      color: rgba(255,255,255,.76);
+    }
+
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 52px;
+      padding: 0 22px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 750;
+      transition: transform .2s ease, background .2s ease;
+    }
+
+    .button-primary {
+      background: var(--accent);
+      color: white;
+    }
+
+    .button-secondary {
+      background: rgba(255,255,255,.10);
+      border: 1px solid rgba(255,255,255,.22);
+      color: white;
+    }
+
+    .button:hover { transform: translateY(-2px); }
+
+    .phone {
+      margin-top: 15px;
+      font-size: .92rem;
+      color: rgba(255,255,255,.62);
+    }
+
+    footer {
+      padding-bottom: 34px;
+      color: var(--muted);
+      text-align: center;
+      font-size: .84rem;
+    }
+
+    @media (max-width: 760px) {
+      .hero { padding-top: 22px; }
+
+      .logo {
+        width: 64px;
+        height: 64px;
+      }
+
+      .banner {
+        border-radius: 16px;
+      }
+
+      .cats {
+        grid-template-columns: 1fr;
+      }
+
+      .cat-copy {
+        padding: 24px;
+      }
+
+      .story {
+        padding: 28px 22px;
+      }
+
+      .contact {
+        padding: 36px 22px;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Indianapolis Cat Adoption",
+    "description": "E.T. and Bat, two sweet and playful sister cats, are available for adoption in Indianapolis, Indiana.",
+    "about": {
+      "@type": "Thing",
+      "name": "Cat Adoption in Indianapolis"
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <main class="page">
+
+    <header class="hero">
+      <img src="logo.png" alt="Indy Cat Adoptions cat logo" class="logo" />
+      <img src="banner.jpeg" alt="Indy Cat Adoptions Indianapolis skyline banner" class="banner" />
+
+      <div class="hero-copy">
+        <h1>Indianapolis Cat Adoption</h1>
+        <p>
+          Meet E.T. and Bat, two sweet and playful sisters currently looking for loving homes
+          in the Indianapolis area.
+        </p>
+        <span class="sisters-note">Sisters • Female • Indianapolis, Indiana</span>
+      </div>
+    </header>
+
+    <section class="cats" aria-label="Cats available for adoption">
+
+      <article class="cat-card">
+        <div class="cat-photo-wrap">
+          <img src="et.jpeg" alt="E.T., a female cat available for adoption in Indianapolis" class="cat-photo" />
+        </div>
+
+        <div class="cat-copy">
+          <span class="eyebrow">Available for adoption</span>
+          <h2>E.T.</h2>
+          <p class="details">Female • Sister to Bat</p>
+          <p class="bio">
+            E.T. is a sweet, playful girl who was found with her sister Bat as part of a litter
+            in the Greenbriar neighborhood on Indianapolis’ north side. She is now looking for
+            a loving home of her own. More details about her personality will be added soon.
+          </p>
+        </div>
+      </article>
+
+      <article class="cat-card">
+        <div class="cat-photo-wrap">
+          <img src="bat.jpeg" alt="Bat, a female cat available for adoption in Indianapolis" class="cat-photo" />
+        </div>
+
+        <div class="cat-copy">
+          <span class="eyebrow">Available for adoption</span>
+          <h2>Bat</h2>
+          <p class="details">Female • Sister to E.T.</p>
+          <p class="bio">
+            Bat is a sweet, playful girl who was found with her sister E.T. as part of a litter
+            in the Greenbriar neighborhood on Indianapolis’ north side. She is ready to find a
+            loving home where she can settle in and be part of the family. More details coming soon.
+          </p>
+        </div>
+      </article>
+
+    </section>
+
+    <section class="story">
+      <h2>Their story</h2>
+      <p>
+        E.T. and Bat are sisters who were found as part of a litter in the Greenbriar neighborhood
+        on the north side of Indianapolis. Both are sweet, playful cats, and we’re hoping to connect
+        them with caring adopters who can give them safe, happy homes.
+      </p>
+    </section>
+
+    <section class="contact">
+      <h2>Interested in adopting?</h2>
+      <p>
+        To learn more about E.T. or Bat, ask questions, or arrange a time to meet them,
+        contact Anna Moreno.
+      </p>
+
+      <div class="contact-actions">
+        <a class="button button-primary" href="tel:+13179874423">Call Anna</a>
+        <a class="button button-secondary" href="sms:+13179874423">Text Anna</a>
+      </div>
+
+      <div class="phone">Anna Moreno • 317-987-4423</div>
+    </section>
+
+    <footer>
+      Indy Cat Adoptions • Cats available for adoption in Indianapolis, Indiana
+    </footer>
+
+  </main>
+</body>
+</html>
